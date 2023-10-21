@@ -12,6 +12,18 @@ led1,led2,led3= 11,13,15
 def index():
     return render_template('index.html')
 
+@app.route('/home')
+def home():
+    return render_template('index.html')
+
+@app.route('/webpage1')
+def webpage1():
+    return render_template('webpage1.html')
+
+@app.route('/webpage2')
+def webpage2():
+    return render_template('webpage2.html')
+
 @app.route('/RPi_control')
 def RPi_control():
     return render_template('RPi_control.html')
